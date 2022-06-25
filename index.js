@@ -7,5 +7,5 @@
         return Buffer.from(string, 'base64').toString('ascii');
     }
 
-    console.log(encode('hello'), decode('aGVsbG8='));
+    console.log(encode('hello'), decode(encode('hello')));
 })()
